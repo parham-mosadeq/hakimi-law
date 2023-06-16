@@ -7,13 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-      main_nav_color: '#211c3a',
-      main_txt_color: '#4f476f',
-      dark_txt_color: '#39334f',
-      main_logo_color: '#e6be7a',
-      dark_logo_color: '#e6be7a7e',
-      main_footer_color: ' #4f476f',
-      main_contact_colo: '#656806',
+      colors: {
+        main_nav_color: '#211c3a',
+        main_txt_color: '#4f476f',
+        dark_txt_color: '#39334f',
+        main_logo_color: '#e6be7a',
+        dark_logo_color: '#e6be7a7e',
+        main_footer_color: ' #4f476f',
+        main_contact_colo: '#656806',
+      },
     },
   },
   plugins: [],
