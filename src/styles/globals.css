@@ -45,3 +45,22 @@ h6 {
 body {
   font-family: Helvetica;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4f476f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e6be7a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #211c3a;
+}
