@@ -11,7 +11,7 @@ function Footer() {
         {/* contact info */}
         <div className='md:flex '>
           <p className={txtClasses}>0923123123</p>
-          <p className={`${txtClasses} px-3`}>0923123123</p>
+          <p className={`${txtClasses} md:px-3`}>0923123123</p>
           <p className={txtClasses}>0923123123</p>
         </div>
         {/* contact info */}
@@ -48,7 +48,7 @@ function Footer() {
         {/* links */}
         <div className='flex flex-col md:flex-row  text-sm'>
           <Link href='/'>مقالات</Link>
-          <Link className='px-3' href='/'>
+          <Link className='md:px-3' href='/'>
             تماس با ما
           </Link>
           <Link href='/'>درباره ما</Link>
