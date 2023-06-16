@@ -1,4 +1,5 @@
 import HomePageCards from '../modules/home/HomeCards';
+import HomeDetailsPage from '../modules/home/HomeDetails';
 import HomeProfile from '../modules/home/HomeProfile';
 
 function HomePage() {
@@ -6,6 +7,7 @@ function HomePage() {
     <main>
       <HomeProfile />
       <HomePageCards />
+      <HomeDetailsPage />
     </main>
   );
 }
