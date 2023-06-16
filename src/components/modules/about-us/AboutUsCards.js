@@ -15,7 +15,7 @@ function AboutUsCards() {
               alt='hakminejaz law founder'
             />
           </div>
-          <p className='max-w-md mx-auto p-3'>
+          <p className='max-w-md md:w-full mx-auto p-3'>
             Lorem ipsum dolor sit amet consectetur adipisic ng elit. Re Lorem
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Re Lorem
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Re Lorem
@@ -69,7 +69,7 @@ function AboutUsCards() {
               alt='hakminejaz law founder'
             />
           </div>
-          <p className='max-w-md mx-auto p-3'>
+          <p className='max-w-xl md:w-full mx-auto p-3'>
             Lorem ipsum dolor sit amet consectetur adipisic ng elit. Re Lorem
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Re Lorem
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Re Lorem
