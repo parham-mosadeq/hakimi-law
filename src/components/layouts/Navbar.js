@@ -30,7 +30,7 @@ function Navbar() {
           {isOpen ? <HiMenu /> : <HiX />}
         </span>
         <ul
-          className={`absolute top-0 right-0 h-screen bg-main_nav_color w-1/2 ${
+          className={`absolute top-0 right-0 h-screen z-10 bg-main_nav_color w-1/2 ${
             isOpen ? 'hidden' : 'absolute'
           } 
         md:flex md:h-10 md:bg-none md:m-0 md:w-fit md:relative md:items-center justify-center
