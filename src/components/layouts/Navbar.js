@@ -6,21 +6,22 @@ import { useRouter } from 'next/router';
 function Navbar() {
   const router = useRouter();
   const navItems = ['خانه', 'تماس با ما', 'درباره ما', 'مقالات'];
+  const navLinks = ['home', 'contact-us', 'about-us', 'blogs'];
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleToggle = () => setIsOpen((prev) => !prev);
+  const handleToggle = () => setIsOpen(() => !isOpen);
 
   useEffect(() => {
-    handleToggle();
-  }, [router.pathname]);
+    handleToggle(false);
+  }, [router.asPath]);
 
   return (
     <nav className=' bg-main_nav_color'>
       <div className='flex flex-row-reverse w-full justify-between items-center max-w-6xl mx-auto p-2'>
         <header>
-          <div>
+          <Link href='/'>
             <Image src='/icons/logo.svg' width={100} height={100} />
-          </div>
+          </Link>
         </header>
         <span
           onClick={handleToggle}
@@ -35,14 +36,14 @@ function Navbar() {
         md:flex md:h-10 md:bg-none md:m-0 md:w-fit md:relative md:items-center justify-center
         `}
         >
-          {navItems.map((item) => {
+          {navItems.map((item, idx) => {
             const joinedItem = item.split(' ').join('-');
 
             return (
               <li className='m-10 md:m-0' key={item}>
                 <Link
                   className='hover:text-dark_logo_color transition duration-200 md:mx-3 lg:px-5'
-                  href={`/${item === 'خانه' ? '' : joinedItem}`}
+                  href={`/${item === 'خانه' ? '' : navLinks[idx]}`}
                 >
                   {item}
                 </Link>
