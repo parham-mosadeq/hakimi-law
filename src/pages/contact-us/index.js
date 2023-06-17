@@ -2,7 +2,7 @@ import ContactUsPage from '@/components/templates/ContactUsPage';
 
 function ContactUs() {
   return (
-    <main>
+    <main className='h-screen'>
       <ContactUsPage />
     </main>
   );

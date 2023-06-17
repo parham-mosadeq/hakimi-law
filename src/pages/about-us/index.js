@@ -1,7 +1,7 @@
 import AboutUsPage from '@/components/templates/AboutUs';
 function ContactUs() {
   return (
-    <main>
+    <main className='min-h-screen'>
       <AboutUsPage />
     </main>
   );
