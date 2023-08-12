@@ -2,10 +2,10 @@ import ContactUsInfo from '../modules/contact-us/ContactUsInfo';
 import ContactUsTitles from '../modules/contact-us/ContactUsTitles';
 function ContactUsPage() {
   return (
-    <div>
+    <section >
       <ContactUsTitles />
       <ContactUsInfo />
-    </div>
+    </section>
   );
 }
 
