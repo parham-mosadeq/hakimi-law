@@ -2,7 +2,7 @@ import Image from 'next/image';
 function AboutUsCards() {
   return (
     <>
-      <article className='px-3 my-10 lg:max-w-2xl lg:mx-auto'>
+      <article className='px-3 text-justify my-10 lg:max-w-2xl lg:mx-auto'>
         {/* founder */}
         <div className='bg-main_logo_color relative rounded-lg my-10 w-full '>
           <div className='flex justify-between items-center w-full py-2 border-b-2 border-dashed border-main_nav_color'>
@@ -15,7 +15,7 @@ function AboutUsCards() {
               alt='hakminejaz law founder'
             />
           </div>
-          <p className='max-w-md md:w-full mx-auto p-3'>
+          <p className='max-w-xl  w-full mx-auto p-3'>
             Lorem ipsum dolor sit amet consectetur adipisic ng elit. Re Lorem
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Re Lorem
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Re Lorem

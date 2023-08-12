@@ -17,6 +17,10 @@ module.exports = {
         sec_contact_gri: '#656806',
         main_contact_gri: '#211C3A',
       },
+      backgroundImage: {
+        aboutUsBg: 'url(/icons/contact-us.png)',
+        homeLogoBg: 'url(/icons/landing-page-logo.png)',
+      },
     },
   },
   plugins: [],
