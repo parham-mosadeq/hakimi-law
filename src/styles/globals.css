@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: B-NAZANIN;
+  src: url('/public/fonts/B-NAZANIN.TTF');
+}
+
 :root {
   /* main colors */
   --main-nav-color: #211c3a;
@@ -43,7 +48,8 @@ h6 {
 }
 
 body {
-  font-family: Helvetica;
+  font-family: B-NAZANIN;
+  /* font-family: 'Courier New', Courier, monospace; */
 }
 
 ::-webkit-scrollbar {
