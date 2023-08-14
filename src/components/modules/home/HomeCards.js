@@ -4,6 +4,7 @@ function HomePageCards() {
   const cardClasses = 'bg-main_logo_color rounded-lg px-3 py-2 my-9';
   const cardTitleClasses = 'text-xl font-serif font-bold';
   const cardTxtClasses = 'pr-4 my-4';
+  
   return (
     <section className='px-4 md:grid md:gap-10 md:grid-cols-2 lg:grid-cols-2 max-w-5xl mx-auto'>
       <motion.div

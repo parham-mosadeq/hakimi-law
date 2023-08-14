@@ -3,6 +3,7 @@ import HomeDetailsPage from '../modules/home/HomeDetails';
 import HomeProfile from '../modules/home/HomeProfile';
 
 function HomePage() {
+  
   return (
     <main>
       <HomeProfile />
@@ -13,3 +14,4 @@ function HomePage() {
 }
 
 export default HomePage;
+

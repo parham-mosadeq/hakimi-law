@@ -42,7 +42,7 @@ function Navbar() {
             return (
               <li className='m-10 md:m-0' key={item}>
                 <Link
-                  className='hover:text-dark_logo_color transition duration-200 md:mx-3 lg:px-5'
+                  className='hover:text-dark_logo_color hover:cursor-pointer transition duration-200 md:mx-3 lg:px-5'
                   href={`/${item === 'خانه' ? '' : navLinks[idx]}`}
                 >
                   {item}
