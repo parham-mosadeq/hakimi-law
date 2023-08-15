@@ -51,9 +51,9 @@ function ContactUsInfo() {
                 <HiOutlineMail className={svgClasses} />
                 <a
                   className='text-main_txt_color text-lg capitalize'
-                  href='mailto:/'
+                  href='mailto:info@hakiminejad.com'
                 >
-                  hakimilaw@gmail.com
+                  info@hakiminejad.com{' '}
                 </a>
               </p>
               <p className='flex items-center'>
