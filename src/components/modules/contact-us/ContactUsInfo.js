@@ -7,6 +7,7 @@ import ContactUsForm from './ContactUsForm';
 import { motion } from 'framer-motion';
 import { phoneOne, phoneTwo, address } from '../../../../data/contactDetails';
 import { ConvertToFarsiNumbers } from '../../../../lib/lib';
+import ContactUsPhones from './ContactUsPhones';
 function ContactUsInfo() {
   const svgClasses = 'text-3xl text-main_logo_color';
 
@@ -33,9 +34,8 @@ function ContactUsInfo() {
             className='flex items-center justify-center '
           >
             <HiOutlineDeviceMobile className={svgClasses} />
-            <span className='text-lg'>
-              <p> {ConvertToFarsiNumbers(+phoneOne)} </p>
-              <p> {ConvertToFarsiNumbers(phoneTwo)} </p>
+            <span className='text-lg  text-main_txt_color'>
+              <ContactUsPhones txtColor='text-main_txt_color' />
             </span>
           </motion.div>
           {/* phones */}

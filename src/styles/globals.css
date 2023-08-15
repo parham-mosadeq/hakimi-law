@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: B-NAZANIN;
-  src: url('/public/fonts/B-NAZANIN.TTF');
+  font-family: 'b';
+  src: url('/public/fonts/b_yekan-webfont.woff2') format('woff2'),
+    url('/public/fonts/b_yekan-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
@@ -45,11 +48,6 @@ h6 {
   font-size: larger;
   margin: 3px 1px;
   padding: 4px 8px;
-}
-
-body {
-  font-family: B-NAZANIN;
-  /* font-family: 'Courier New', Courier, monospace; */
 }
 
 ::-webkit-scrollbar {

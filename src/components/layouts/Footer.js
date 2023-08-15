@@ -1,25 +1,13 @@
 import Link from 'next/link';
-import Image from 'next/image';
-import { ConvertToFarsiNumbers } from '../../../lib/lib';
-import { phoneOne, phoneTwo } from '../../../data/contactDetails';
+import ContactUsPhones from '../modules/contact-us/ContactUsPhones';
 
 function Footer() {
-  const txtClasses = 'text-main_logo_color text-sm';
-  const commonClasses = '';
-
   return (
     <footer className=' bg-main_nav_color'>
       <div className='flex w-full px-2 justify-between items-center max-w-6xl mx-auto p-2 h-fit'>
         {/* contact info */}
-        <div className='md:flex  '>
-          <p className='text-main_logo_color tracking-wider'>
-            {' '}
-            {ConvertToFarsiNumbers(+phoneOne)}{' '}
-          </p>
-          <p className='text-main_logo_color tracking-wider'>
-            {' '}
-            {ConvertToFarsiNumbers(phoneTwo)}{' '}
-          </p>
+        <div className='md:flex md:gap-5 '>
+          <ContactUsPhones txtColor='text-main_logo_color' />
         </div>
         {/* contact info */}
 
