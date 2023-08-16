@@ -5,7 +5,7 @@ function ContactUs() {
   return (
     <main className='min-h-screen'>
       <Head>
-        <title>تماس با ما | مؤسسه حکیمی‌نژاد</title>
+        <title>تماس با ما | موسسه حقوقی داوری بین اللمللی حکیمی‌نژاد </title>
       </Head>
       <ContactUsPage />
     </main>

@@ -33,9 +33,13 @@ function HomeDetailsPage() {
                   width={30}
                   height={30}
                 />
-                <h3 className={cardTitleClasses}>{item.question} </h3>
+                <h3 className={`${cardTitleClasses} text-lg font-extrabold `}>
+                  {item.question}{' '}
+                </h3>
               </div>
-              <p className={cardTxtClasses}>{item.answer}</p>
+              <p className={`${cardTxtClasses} font-normal text-base`}>
+                {item.answer}
+              </p>
             </motion.div>
           );
         })}

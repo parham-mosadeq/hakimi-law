@@ -5,8 +5,7 @@ import {
 } from 'react-icons/hi';
 import ContactUsForm from './ContactUsForm';
 import { motion } from 'framer-motion';
-import { phoneOne, phoneTwo, address } from '../../../../data/contactDetails';
-import { ConvertToFarsiNumbers } from '../../../../lib/lib';
+import { address } from '../../../../data/contactDetails';
 import ContactUsPhones from './ContactUsPhones';
 function ContactUsInfo() {
   const svgClasses = 'text-3xl text-main_logo_color';
@@ -16,13 +15,13 @@ function ContactUsInfo() {
       {/* break */}
       <div className='h-32 bg-gradient-to-l from-main_contact_gri to-sec_contact_gri'>
         <h3 className='text-main_logo_color text-center pt-10 text-3xl'>
-          نحوه برقراری با موسسه
+          نحوه برقراری ارتباط با موسسه
         </h3>
       </div>
       {/* break */}
       <div className='px-2 h-screen mx-auto max-w-6xl'>
         <div className='text-center my-24 text-xl font-extrabold tracking-wider'>
-          <p> برقرای ارتباط با کارشناسان ما</p>
+          {/* <p> برقرای ارتباط با کارشناسان ما</p> */}
         </div>
 
         <article className='flex justify-between items-center flex-row-reverse'>

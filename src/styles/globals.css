@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'b';
-  src: url('/public/fonts/b_yekan-webfont.woff2') format('woff2'),
-    url('/public/fonts/b_yekan-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 :root {
   /* main colors */
   --main-nav-color: #211c3a;
@@ -28,7 +20,7 @@
 
   --main-padding: 8px 16px;
 }
-
+ 
 a {
   text-decoration: none;
   color: var(--main-logo-color);

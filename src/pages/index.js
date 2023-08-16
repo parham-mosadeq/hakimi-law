@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>خانه | مؤسسه حکیمی‌نژاد</title>
+        <title>خانه | موسسه حقوقی داوری بین اللمللی حکیمی‌نژاد</title>
       </Head>
       <HomePage />
     </>
