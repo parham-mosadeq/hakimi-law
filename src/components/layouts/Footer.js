@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import ContactUsPhones from '../modules/contact-us/ContactUsPhones';
+import Image from 'next/image';
 
 function Footer() {
   return (
@@ -12,6 +13,12 @@ function Footer() {
         {/* contact info */}
 
         {/* socials */}
+        <div>
+          <Link href='https://instagram.com/hakiminejadlaw?igshid=MzRlODBiNWFlZA=='>
+            <Image src='/icons/insta.png' width={30} height={20} />
+          </Link>
+        </div>
+
         {/* <div className='flex text-sm'>
           <Link className='px-2' href={'/'}>
             <Image
