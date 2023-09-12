@@ -15,7 +15,13 @@ function Footer() {
         {/* socials */}
         <div>
           <Link href='https://instagram.com/hakiminejadlaw?igshid=MzRlODBiNWFlZA=='>
-            <Image src='/icons/insta.png' width={30} height={20} />
+            <Image
+              className='h-auto w-auto'
+              src='/icons/insta.png'
+              width={30}
+              height={20}
+              alt='instagram logo'
+            />
           </Link>
         </div>
 

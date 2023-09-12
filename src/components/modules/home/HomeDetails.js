@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { data } from '../../../../data/db.json';
+import details from '../../../../data/db.json';
 
 function HomeDetailsPage() {
   const cardClasses =
@@ -8,7 +8,7 @@ function HomeDetailsPage() {
   const cardTitleClasses = 'text-xl font-serif font-bold';
   const cardTxtClasses =
     'pr-3 my-4 w-3/4 mx-auto tracking-wider text-justify text-lg';
-  const { faq } = data;
+  const { faq } = details.data;
   return (
     <article className='overflow-x-hidden'>
       {/* box */}
@@ -32,6 +32,7 @@ function HomeDetailsPage() {
                   src={`/home/${item.id}.svg`}
                   width={30}
                   height={30}
+                  alt={item.question}
                 />
                 <h3 className={`${cardTitleClasses} text-lg font-extrabold `}>
                   {item.question}{' '}

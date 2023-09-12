@@ -1,8 +1,8 @@
 import React from 'react';
-import { data } from '../../../data/db';
+import law from '../../../data/db';
 
 export default function LawyersPage() {
-  const { lawyers } = data;
+  const { lawyers } = law.data;
   const pronoun = {
     male: 'جناب آقای',
     female: 'سرکار خانم',

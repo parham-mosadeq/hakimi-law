@@ -20,7 +20,14 @@ function Navbar() {
       <div className='flex flex-row-reverse w-full justify-between items-center max-w-6xl mx-auto p-2'>
         <header>
           <Link href='/'>
-            <Image src='/icons/logo.svg' width={100} height={100} />
+            <Image
+              className='lg:h-auto lg:w-auto'
+              src='/icons/logo.svg'
+              width={100}
+              height={100}
+              alt='web-logo'
+              priority={true}
+            />
           </Link>
         </header>
         <span
