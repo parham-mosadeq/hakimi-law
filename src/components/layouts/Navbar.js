@@ -5,8 +5,8 @@ import { HiX, HiMenu } from 'react-icons/hi';
 import { useRouter } from 'next/router';
 function Navbar() {
   const router = useRouter();
-  const navItems = ['خانه', 'تماس با ما', 'درباره ما', 'مقالات'];
-  const navLinks = ['home', 'contact-us', 'about-us', 'blogs'];
+  const navItems = ['خانه', 'تماس با ما', 'درباره ما', 'مقالات', 'وکلا'];
+  const navLinks = ['home', 'contact-us', 'about-us', 'blogs', 'lawyers'];
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => setIsOpen(() => !isOpen);
