@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-export default function ContactUsLocation() {
+import { memo } from 'react';
+function ContactUsLocation() {
   return (
     <section className='flex overflow-hidden justify-center items-center h-56  w-11/12  md:max-w-5xl border-2 border-main_logo_color my-10 mx-auto'>
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
@@ -19,3 +20,5 @@ export default function ContactUsLocation() {
     </section>
   );
 }
+
+export default memo(ContactUsLocation);
