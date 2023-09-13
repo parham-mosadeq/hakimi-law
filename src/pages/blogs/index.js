@@ -1,8 +1,8 @@
 import Head from 'next/head';
-
+import BlogsPage from '@/components/templates/BlogsPage';
 function Blogs() {
   return (
-    <div>
+    <div className='min-h-screen'>
       <Head>
         <title>مقالات | موسسه حقوقی داوری بین اللمللی حکیمی‌نژاد</title>
 
@@ -23,7 +23,9 @@ function Blogs() {
         <meta property='og:image' content='/icons/landing-page-logo.png' />
         <meta name='robots' content='noindex,nofollow' />
       </Head>
-      <h1 className='text-3xl mt-24 h-screen text-center'>به زودی</h1>
+      <div className=''>
+        <BlogsPage />
+      </div>
     </div>
   );
 }
