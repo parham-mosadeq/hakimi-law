@@ -10,7 +10,7 @@ export default function Filters() {
           <input type='checkbox' id='bank' />
         </div>
         <div className='py-3 flex justify-center items-center'>
-          <label htmlFor='justice'>دیوان عدال اداری</label>
+          <label htmlFor='justice'>دیوان عدالت اداری</label>
           <input type='checkbox' id='justice' />
         </div>
         <div className='py-3 flex justify-center items-center'>

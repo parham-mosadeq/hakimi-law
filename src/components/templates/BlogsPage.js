@@ -18,6 +18,7 @@ const Query = gql`
       title
       shortDesc
       id
+      tags
     }
   }
 `;
@@ -32,7 +33,11 @@ export default function BlogsPage() {
       {/* articles */}
       {data ? (
         data.blog.map((blog) => {
-          // return <BlogCards blog={blog} />;
+          return (
+            <div key={blog.id}>
+              <BlogCards blog={blog} />
+            </div>
+          );
         })
       ) : (
         <Loader />

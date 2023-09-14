@@ -1,20 +1,21 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import RenderTags from './RenderTags';
 export default function BlogCards({ blog }) {
   const persianDate = new Date(blog.createdAt).toLocaleDateString('fa');
+
   return (
     <article
       key={blog.id}
       className='flex my-10 max-w-lg mx-auto shadow-lg flex-col justify-center items-center'
     >
       <div className='w-auto h-[190px] max-w-lg'>
-        <Image
-          className='mx-auto h-full w-full rounded-t-lg object-cover '
-          src='/icons/contact-us.png'
+        <img
+          className='mx-auto h-full w-[560px] rounded-t-lg object-cover '
+          src={blog.images[0].url}
           width={400}
           height={400}
-          alt='header'
+          alt={blog.title}
         />
       </div>
       <div className='w-full mx-auto bg-gray-100'>
@@ -25,7 +26,7 @@ export default function BlogCards({ blog }) {
         </div>
         <div className='px-4 py-2 text-sm flex items-center '>
           <p>تگ ها: </p>
-          <span>#وکالت</span>
+          <RenderTags blog={blog} />
         </div>
         {/* short desc */}
         <div>
