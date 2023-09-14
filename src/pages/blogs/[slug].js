@@ -3,11 +3,33 @@ import BlogDetailsPage from '@/components/templates/BlogDetailsPage';
 
 import { gql, useQuery } from '@apollo/client';
 
-const Blog_Query = gql`
-  query Blog($slug: String!) {
-    blog(where: { slug: $slug }) {
+// ! does not work
+// const Query = gql`
+//   query Blog($slug: String!) {
+//     blog(where: { slug: $slug }) {
+//       author
+//       createdAtw
+//       description {
+//         html
+//       }
+//       images {
+//         url
+//       }
+//       slug
+//       title
+//       id
+//       tags
+//       shortDesc
+//     }
+//   }
+// `;
+// ! does not work
+
+const Query_ = gql`
+  query Blog {
+    blog {
       author
-      createdAtw
+      createdAt
       description {
         html
       }
@@ -16,17 +38,15 @@ const Blog_Query = gql`
       }
       slug
       title
+      shortDesc
       id
       tags
-      shortDesc
     }
   }
 `;
 
 export default function BlogDetails({ slug }) {
-  const { data, loading } = useQuery(Blog_Query, {
-    variables: { slug },
-  });
+  const { data, loading } = useQuery(Query_);
   if (loading) {
     return (
       <div className='min-h-screen'>
@@ -34,15 +54,18 @@ export default function BlogDetails({ slug }) {
       </div>
     );
   }
-  return (
-    <div className='min-h-screen'>
-      <BlogDetailsPage blog={data} />
-    </div>
-  );
+  if (!loading) {
+    const exactBlog = data.blog.filter((i) => i.slug === slug);
+    return (
+      <div className='min-h-screen'>
+        <BlogDetailsPage blog={exactBlog} />
+      </div>
+    );
+  }
 }
 
 export async function getServerSideProps({ resolvedUrl }) {
-  const slug = resolvedUrl.split('/')[2];
+  const slug = await resolvedUrl.split('/')[2];
   return {
     props: { slug },
   };
