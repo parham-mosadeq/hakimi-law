@@ -21,7 +21,7 @@ function Blogs() {
           content='مقالات مرتبط با مسائل حقوقی را از اینجا بخوانید، در تمامی زمینه های حقوقی'
         />
         <meta property='og:image' content='/icons/landing-page-logo.png' />
-        <meta name='robots' content='noindex,nofollow' />
+        <meta name='robots' content='index,follow' />
       </Head>
       <div className=''>
         <BlogsPage />

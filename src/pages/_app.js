@@ -1,12 +1,7 @@
 import Layout from '@/components/layouts/Layout';
 import '@/styles/globals.css';
 import { Vazirmatn } from 'next/font/google';
-import {
-  ApolloClient,
-  ApolloProvider,
-  ApolloCache,
-  InMemoryCache,
-} from '@apollo/client';
+import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
 const vazir = Vazirmatn({ subsets: ['arabic'] });
 

@@ -1,7 +1,14 @@
-import React from 'react'
+import React from 'react';
+import BlogDetail from '../modules/blogs/BlogDetail';
 
-export default function BlogDetailsPage() {
+export default function BlogDetailsPage({ blog }) {
   return (
-    <div>BlogDetailsPage</div>
-  )
+    <div className=''>
+      {blog.blog.map((i) => (
+        <div key={i.id}>
+          <BlogDetail blog={i} />
+        </div>
+      ))}
+    </div>
+  );
 }

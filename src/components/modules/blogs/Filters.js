@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export default function Filters() {
@@ -6,20 +7,16 @@ export default function Filters() {
       <h3 className='-mt-20'> فیلترها</h3>
       <section className=''>
         <div className='py-3 flex justify-center items-center'>
-          <label htmlFor='bank'>بانکی</label>
-          <input type='checkbox' id='bank' />
+          <Link href={'/blogs/tags/bank'}>بانکی</Link>
         </div>
         <div className='py-3 flex justify-center items-center'>
-          <label htmlFor='justice'>دیوان عدالت اداری</label>
-          <input type='checkbox' id='justice' />
+          <Link href={'/blogs/tags/justice'}>دیوان عدالت اداری</Link>
         </div>
         <div className='py-3 flex justify-center items-center'>
-          <label htmlFor='law'>حقوقی</label>
-          <input type='checkbox' id='law' />
+          <Link href={'/blogs/tags/law'}>حقوقی</Link>
         </div>
         <div className='py-3 flex justify-center items-center'>
-          <label htmlFor='punishment'>کیفری</label>
-          <input type='checkbox' id='punishment' />
+          <Link href={'/blogs/tags/punishment'}>کیفری</Link>
         </div>
       </section>
     </aside>
