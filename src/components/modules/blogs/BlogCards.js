@@ -7,7 +7,7 @@ export default function BlogCards({ blog }) {
   return (
     <article
       key={blog.id}
-      className='flex my-10 max-w-lg mx-auto shadow-lg flex-col justify-center items-center'
+      className='flex my-10  max-w-lg mx-auto shadow-lg flex-col justify-center items-center'
     >
       <div className='w-auto h-[190px] max-w-lg'>
         <img
