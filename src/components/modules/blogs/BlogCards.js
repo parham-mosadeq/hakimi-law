@@ -3,7 +3,7 @@ import Link from 'next/link';
 import RenderTags from './RenderTags';
 export default function BlogCards({ blog }) {
   const persianDate = new Date(blog.createdAt).toLocaleDateString('fa');
-
+  console.log(blog.images[0]?.url);
   return (
     <article
       key={blog.id}
@@ -12,7 +12,7 @@ export default function BlogCards({ blog }) {
       <div className='w-auto h-[190px] max-w-lg'>
         <img
           className='mx-auto h-full w-[560px] rounded-t-lg object-cover '
-          src={blog.images[0].url}
+          src={blog.images[0]?.url}
           width={400}
           height={400}
           alt={blog.title}

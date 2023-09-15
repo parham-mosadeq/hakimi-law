@@ -24,7 +24,20 @@ const Query = gql`
 `;
 
 export default function BlogsPage() {
-  const { data } = useQuery(Query);
+  const { data, loading, error } = useQuery(Query);
+
+  if (loading) {
+    return (
+      <>
+        <Loader />
+      </>
+    );
+  }
+
+  if (error) {
+    return <p>در دست تعمیر</p>;
+  }
+
   return (
     <section className='grid grid-cols-1 md:grid-cols-3 gap-5 mx-auto relative min-h-screen max-w-6xl'>
       <div className='row-span-6'>
@@ -40,7 +53,7 @@ export default function BlogsPage() {
           );
         })
       ) : (
-        <Loader />
+        <></>
       )}
     </section>
   );
