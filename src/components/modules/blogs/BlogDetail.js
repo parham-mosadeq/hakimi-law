@@ -7,7 +7,6 @@ import sanitizeHtml from 'sanitize-html';
 export default function BlogDetail({ blog }) {
   const persianDate = new Date(blog.createdAt).toLocaleDateString('fa');
   const { description } = blog;
-  console.log(description);
   return (
     <>
       <Head>
