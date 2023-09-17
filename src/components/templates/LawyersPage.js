@@ -29,8 +29,8 @@ export default function LawyersPage() {
               />
               <h2
                 className={`${
-                  i.id % 2 === 0 ? '' : ' text-main_logo_color'
-                } text-xl font-bold`}
+                  i.id % 2 === 0 ? '' : 'md:text-left text-main_logo_color'
+                } text-xl font-bold md:flex-grow-[2]`}
               >
                 {pronoun[i.sex]} {i.name}
               </h2>

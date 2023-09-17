@@ -66,32 +66,34 @@
       {
         "id": "3",
         "sex": "male",
-        "name": "علی میرزادی جهرمی",
-        "desc": ""
-      },
-      {
-        "id": "4",
-        "sex": "male",
-        "name": "مجتبی احمدی",
-        "desc": ""
-      },
-      {
-        "id": "5",
-        "sex": "male",
-        "name": "هادی باقری",
-        "desc": ""
-      },
-      {
-        "id": "6",
-        "sex": "male",
         "name": "کاظم دانشمندی",
         "img": "/lawyers/lw-3.jpg",
         "desc": ""
       },
       {
-        "id": "7",
+        "id": "4",
         "sex": "male",
         "name": "دکتر علی علیزاده",
+        "img": "/lawyers/lw-6.jpg",
+        "desc": ""
+      },
+
+      {
+        "id": "5",
+        "sex": "male",
+        "name": "علی میرزادی جهرمی",
+        "desc": ""
+      },
+      {
+        "id": "6",
+        "sex": "male",
+        "name": "مجتبی احمدی",
+        "desc": ""
+      },
+      {
+        "id": "7",
+        "sex": "male",
+        "name": "هادی باقری",
         "desc": ""
       },
 
@@ -99,6 +101,7 @@
         "id": "8",
         "sex": "male",
         "name": "احمدرضا ولایی",
+        "img": "/lawyers/lw-4.jpg",
         "desc": ""
       },
       {
@@ -117,6 +120,7 @@
         "id": "11",
         "sex": "female",
         "name": "صدف دانشمندی",
+        "img": "/lawyers/lw-5.jpg",
         "desc": ""
       },
       {
