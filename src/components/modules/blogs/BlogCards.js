@@ -1,9 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import RenderTags from './RenderTags';
+// import RenderTags from './RenderTags';
 export default function BlogCards({ blog }) {
   const persianDate = new Date(blog.createdAt).toLocaleDateString('fa');
-  console.log(blog.images[0]?.url);
   return (
     <article
       key={blog.id}
@@ -25,8 +24,8 @@ export default function BlogCards({ blog }) {
           <p className=''> {persianDate}</p>
         </div>
         <div className='px-4 py-2 text-sm flex items-center '>
-          <p>تگ ها: </p>
-          <RenderTags blog={blog} />
+          {/* <p>تگ ها: </p>
+          <RenderTags blog={blog} /> */}
         </div>
         {/* short desc */}
         <div>
