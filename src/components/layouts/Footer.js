@@ -11,7 +11,7 @@ function Footer() {
           <ContactUsPhones txtColor='text-main_logo_color' />
         </div>
         {/* contact info */}
-        <div className='flex justify-center items-center max-w-fit'>
+        <div className='flex justify-center items-center'>
           {/* socials */}
           <>
             <Link
