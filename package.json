@@ -3,12 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next dev",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
-  
   "dependencies": {
     "@apollo/client": "^3.8.3",
     "autoprefixer": "10.4.14",
