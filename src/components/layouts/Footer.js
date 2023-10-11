@@ -11,47 +11,41 @@ function Footer() {
           <ContactUsPhones txtColor='text-main_logo_color' />
         </div>
         {/* contact info */}
+        <div className='flex justify-center items-center max-w-fit'>
+          {/* socials */}
+          <>
+            <Link
+              target='_blank'
+              className='mx-2'
+              href='https://instagram.com/hakiminejadlaw?igshid=MzRlODBiNWFlZA=='
+            >
+              <Image
+                className='h-auto w-auto text-main_logo_color'
+                src='/icons/instagram_logo.png'
+                width={30}
+                height={20}
+                alt='اینستاگرام موسسه حفوقی حکیمی نژاد'
+              />
+            </Link>
+          </>
+          <>
+            <Link
+              target='_blank'
+              className='mx-2'
+              href='https://wa.me/+989101885399'
+            >
+              <Image
+                className='h-auto w-auto text-main_logo_color'
+                src='/icons/wp.png'
+                width={30}
+                height={20}
+                alt='واتساپ موسسه حفوقی حکیمی نژاد'
+              />
+            </Link>
+          </>
 
-        {/* socials */}
-        <div>
-          <Link href='https://instagram.com/hakiminejadlaw?igshid=MzRlODBiNWFlZA=='>
-            <Image
-              className='h-auto w-auto'
-              src='/icons/insta.png'
-              width={30}
-              height={20}
-              alt='instagram logo'
-            />
-          </Link>
+          {/* socials */}
         </div>
-
-        {/* <div className='flex text-sm'>
-          <Link className='px-2' href={'/'}>
-            <Image
-              src='/icons/Facebook.svg'
-              width={30}
-              height={30}
-              alt='facebook '
-            />
-          </Link>
-          <Link className='px-2' href={'/'}>
-            <Image
-              src='/icons/Linkedin.svg'
-              width={30}
-              height={30}
-              alt='facebook '
-            />
-          </Link>
-          <Link className='px-2' href={'/'}>
-            <Image
-              src='/icons/Twitter.svg'
-              width={30}
-              height={30}
-              alt='facebook '
-            />
-          </Link>
-        </div> */}
-        {/* socials */}
 
         {/* links */}
         <div className='flex flex-col md:flex-row  text-sm'>
