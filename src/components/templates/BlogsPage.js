@@ -1,4 +1,4 @@
-import Filters from '../modules/blogs/Filters';
+// import Filters from '../modules/blogs/Filters';
 import { useQuery } from '@apollo/client';
 import BlogCards from '../modules/blogs/BlogCards';
 import Loader from '../modules/blogs/Loader';
@@ -21,13 +21,12 @@ export default function BlogsPage() {
   }
   const start = data.blog;
   // check for tags
-  console.log(start);
   return (
     <>
       <section className='grid grid-cols-1 md:grid-cols-3 gap-5 mx-auto relative min-h-screen max-w-6xl'>
-        <div className='row-span-6'>
+        {/* <div className='row-span-6'>
           <Filters />
-        </div>
+        </div> */}
         {/* articles */}
         {data ? (
           start.map((blog) => {
