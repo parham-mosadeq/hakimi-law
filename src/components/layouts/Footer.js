@@ -57,6 +57,23 @@ function Footer() {
         </div>
         {/* links */}
       </div>
+      {/* rights and dev */}
+      <div className='w-full flex justify-center items-center flex-col mx-auto'>
+        <p className='text-main_txt_color px-4 text-sm lg:text-base md:px-0'>
+          تمامی حقوق این وبسایت متعلق به موسسه حقوقی داوری بین‌المللی حکیمی نژاد
+          میباشد و هرگونه کپی برداری پیگرد قانونی دارد.{' '}
+        </p>
+        <p>
+          توسعه داده شده توسط|
+          <a
+            className='text-main_txt_color  text-sm lg:text-base md:px-0 capitalize'
+            href='mailto:pmosadeqzadeh@gmail.com'
+          >
+            parham
+          </a>
+        </p>
+      </div>
+      {/* rights and dev */}
     </footer>
   );
 }
