@@ -29,7 +29,5 @@ export default function BlogTagsPage() {
     );
   }
   const postsPerTag = data.blog.filter((i) => i.tags === dictionary[tags]);
-  console.log(data);
-  console.log(postsPerTag);
   return <div>{/* <BlogCards blog={postsPerTag} /> */}</div>;
 }

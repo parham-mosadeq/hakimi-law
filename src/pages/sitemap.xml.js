@@ -62,7 +62,6 @@ export async function getServerSideProps({ res }) {
   const {
     data: { blog },
   } = await posts;
-  console.log(blog);
 
   // We generate the XML sitemap with the posts data
   const sitemap = generateSiteMap(blog);

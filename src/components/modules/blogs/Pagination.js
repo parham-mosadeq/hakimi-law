@@ -5,7 +5,6 @@ export default function Pagination({ blog }) {
   const postPerPage = 3;
   const nextPage = currentPage * postPerPage;
   const start = blog.slice(currentPage, nextPage);
-  console.log(start);
   return (
     <div className='flex justify-center items-center'>
       <button
