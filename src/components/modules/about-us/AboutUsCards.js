@@ -59,13 +59,13 @@ function AboutUsCards() {
         <div className='bg-main_logo_color relative rounded-lg my-10  lg:max-w-5xl'>
           <div className='flex justify-between items-center w-full py-2 border-b-2 border-dashed border-main_nav_color'>
             <h3 className='self-end text-xl font-bold'> موکلین موسسه:</h3>
-            <Image
+            {/* <Image
               className='rounded-full w-auto h-auto absolute -top-7 -left-1  border-main_logo_color border-4'
               src='/icons/ParhamMosadeqzadeh Ilustrations.jpg'
               width={80}
               height={90}
               alt='clients'
-            />
+            /> */}
           </div>
           <ul className='p-6 list-disc text-main_contact_gri text-justify font-bold lg:flex lg:justify-between lg:items-center gap-5'>
             <div>
