@@ -1,4 +1,3 @@
-import Image from 'next/image';
 function AboutUsCards() {
   return (
     <>
@@ -7,13 +6,13 @@ function AboutUsCards() {
         <div className='bg-main_logo_color relative rounded-lg my-10 w-full lg:max-w-5xl '>
           <div className='flex justify-between items-center w-full py-2 border-b-2 border-dashed border-main_nav_color'>
             <h3 className='self-end text-xl font-bold'>بنیان گذار</h3>
-            <Image
+            {/* <Image
               className='rounded-full absolute -top-7 -left-1  border-main_logo_color border-4'
               src='/icons/ParhamMosadeqzadeh Ilustrations.jpg'
               width={80}
               height={90}
               alt='hakminejaz law founder'
-            />
+            /> */}
           </div>
           <p className='max-w-full  w-full mx-auto p-3'>
             موسسه حقوقی داوری بین المللی حکیمی نژاد، فعالیّت رسمی خود را با بهره
